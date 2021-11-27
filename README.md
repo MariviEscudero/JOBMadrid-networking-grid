@@ -67,6 +67,10 @@ And:
 
 ## Code Quality
 
+Code A quality
+
+[![CodeFactor](https://www.codefactor.io/repository/github/mariviescudero/jobmadrid-networking-grid/badge)](https://www.codefactor.io/repository/github/mariviescudero/jobmadrid-networking-grid)
+
 ## License 
 
 [MIT](https://opensource.org/licenses/MIT)
