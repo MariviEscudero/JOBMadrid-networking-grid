@@ -6,17 +6,7 @@ Panel with list of companies and filter by sector, with foundation data, type of
 
 The project is based on an API with company data from which the necessary data for the realization of the panel have been filtered.
 Due to a problem with API url cors, the fetch doesn't work correctly. As a solution:
-Chrome: open the task runner, write this comand if you are on Windows
 
-```
-windows + R
-```
-
-and enter the following line of code:
-
-``
-chrome.exe --user-data-dir="C://Chrome dev session" --disable-web-security
-``
 This extension for Chrome is available to fix the problem
 
 https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc
