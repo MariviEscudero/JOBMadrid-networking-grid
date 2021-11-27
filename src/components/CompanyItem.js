@@ -6,7 +6,7 @@ const CompanyItem = (props) =>{
          <h2 className="main__list--card__subt">{props.companiesData.founded}</h2>
          <button className="main__list--card__industrybtn" type="text">{props.companiesData.industry}</button>
          <button className="main__list--card__sizebtn" type="text">{props.companiesData.size}</button>
-         <a className="main__list--card__link" href={props.companiesData.website} target='_blank' rel='noreferrer'>{props.text}</a>
+         <a className="main__list--card__link" href={`http://www.${props.companiesData.website}`}target='_blank' rel='noreferrer'>{props.text}</a>
         </>
       );
 }
