@@ -51,7 +51,7 @@ To publish the project in GitHub Pages, enter the command:
 
 
 ```
-npm run guthubpages
+npm run githubpages
 ```
 
 And:
