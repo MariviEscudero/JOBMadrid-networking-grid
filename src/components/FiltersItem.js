@@ -1,6 +1,9 @@
 import '../styles/App.scss';
 
 const FiltersItem = (props) => {
+  const handleFilterIndustry = (ev) => {
+    props.handleFilterIndustry(ev.target.value);
+  };
   const filterItem = () => {
     const filterIndustry = props.data.map((dat) => dat.industry);
     const noRepeat = filterIndustry.filter((item, index) => {
@@ -16,18 +19,23 @@ const FiltersItem = (props) => {
     console.log(sortIndustry);
     return sortIndustry;
   };
+
   const renderItem = (index) => {
-    return(filterItem().map((sortIndustry) => (
+    return filterItem().map((sortIndustry) => (
       <option key={index} value={sortIndustry}>
         {sortIndustry}
       </option>
-    )));
+    ));
   };
-  
+
   return (
     <form className="header__form">
       <label htmlFor={props.text}>{props.text}</label>
-      <select id={props.text} name={props.text}>
+      <select 
+        id={props.text} 
+        name={props.text}
+        value={props.inputValue}
+        onChange={handleFilterIndustry}>
         <option id="all" value="all">
           All
         </option>
