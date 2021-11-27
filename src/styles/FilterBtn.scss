@@ -2,8 +2,9 @@
 @import 'core/reset';
 
 .header__filterbtn{
-    background-color: #5AB16D;
-    color: white;
+    background-color: $greencolor;
+    color: $whitecolor;
+    font-size: 18px;
     height: 6vh;
     width: 7vw;
     border-radius: 5px;
