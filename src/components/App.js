@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import '../styles/App.scss';
 import callToApi from '../services/data';
 import FiltersItem from './FiltersItem';
+import CompaniesList from './CompaniesList';
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -22,6 +23,10 @@ console.log(data);
         />
       </header>
       <main>
+        <ul>
+        <CompaniesList
+        data = {data}/>
+        </ul>
       </main>
     </div>
   );
