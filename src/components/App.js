@@ -18,7 +18,7 @@ const App = () => {
   }, []);
 
   const handleFilterIndustry = (value) => {
-    setFilterIndustry(value);
+    setFilterIndustry(value)
   };
   const handleBtn = () => {
     if (filterIndustry === 'all') {

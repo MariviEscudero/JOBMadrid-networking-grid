@@ -2,18 +2,18 @@ import '../styles/App.scss';
 
 const FiltersItem = (props) => {
   const handleFilterIndustry = (ev) => {
-    props.handleFilterIndustry(ev.target.value);
+    props.handleFilterIndustry(ev.target.value)
   };
   const filterItem = () => {
     const filterIndustry = props.data.map((dat) => dat.industry);
     const noRepeat = filterIndustry.filter((item, index) => {
-      return filterIndustry.indexOf(item) === index;
+      return filterIndustry.indexOf(item) === index
     });
     const sortIndustry = noRepeat.sort(function (a, b) {
       if (a > b) {
-        return 1;
+        return 1
       } else {
-        return -1;
+        return -1
       }
     });
     return sortIndustry;
