@@ -16,26 +16,24 @@ const FiltersItem = (props) => {
         return -1;
       }
     });
-    console.log(sortIndustry);
     return sortIndustry;
   };
-
-  const renderItem = (index) => {
-    return filterItem().map((sortIndustry) => (
+  const renderItem = () => {
+    return filterItem().map((sortIndustry,index) => (
       <option key={index} value={sortIndustry}>
         {sortIndustry}
       </option>
     ));
   };
-
   return (
     <form className="header__form">
       <label htmlFor={props.text}>{props.text}</label>
-      <select 
-        id={props.text} 
+      <select
+        id={props.text}
         name={props.text}
         value={props.inputValue}
-        onChange={handleFilterIndustry}>
+        onChange={handleFilterIndustry}
+      >
         <option id="all" value="all">
           All
         </option>

@@ -20,17 +20,16 @@ const App = () => {
   const handleFilterIndustry = (value) => {
     setFilterIndustry(value);
   };
-  console.log(filterIndustry);
-
   const handleBtn = () => {
-    if(filterIndustry === 'all'){
+    if (filterIndustry === 'all') {
       setFilteredData(data);
-    }else{ 
-      const filter = data.filter((dat) => dat.industry.includes(filterIndustry));
-    setFilteredData(filter)}
+    } else {
+      const filter = data.filter((dat) =>
+        dat.industry.includes(filterIndustry)
+      );
+      setFilteredData(filter);
+    }
   };
- 
-
   return (
     <div className="App">
       <header className="header">
