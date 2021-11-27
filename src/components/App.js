@@ -12,8 +12,8 @@ const App = () => {
 
   useEffect(() => {
     callToApi().then((response) => {
-      setData(response);
-      setFilteredData(response);
+      setData(response)
+      setFilteredData(response)
     });
   }, []);
 
@@ -22,12 +22,12 @@ const App = () => {
   };
   const handleBtn = () => {
     if (filterIndustry === 'all') {
-      setFilteredData(data);
+      setFilteredData(data)
     } else {
       const filter = data.filter((dat) =>
         dat.industry.includes(filterIndustry)
       );
-      setFilteredData(filter);
+      setFilteredData(filter)
     }
   };
   return (
