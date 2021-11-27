@@ -8,17 +8,23 @@ The project is based on an API with company data from which the necessary data f
 Due to a problem with API url cors, the fetch doesn't work correctly. As a solution:
 Chrome: open the task runner, write this comand if you are on Windows
 
+```
 windows + R
+```
 
 and enter the following line of code:
 
+``
 chrome.exe --user-data-dir="C://Chrome dev session" --disable-web-security
+``
+This extension for Chrome is available to fix the problem
+
+https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc
 
 ## Installation
 
 What do you need to install the software?
 
-```
 You need to have installed Node JS
 
 1. Download this repository in zip or clone the repository on your device (if you clone the repository, note that you will not be able to add your commits).
@@ -27,7 +33,7 @@ You need to have installed Node JS
 
 ```
 npm install
-
+```
 Once you have done the previous step, start the project. To do this, run the command:
 
 ```
