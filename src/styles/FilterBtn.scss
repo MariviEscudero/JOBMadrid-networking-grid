@@ -1,0 +1,12 @@
+@import 'core/variables';
+@import 'core/reset';
+
+.header__filterbtn{
+    background-color: #5AB16D;
+    color: white;
+    height: 6vh;
+    width: 7vw;
+    border-radius: 5px;
+    border: none;
+    margin-left: 200px;
+}
